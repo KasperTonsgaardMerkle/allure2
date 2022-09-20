@@ -38,6 +38,14 @@ public class TestResultTreeLeaf extends DefaultTreeLeaf {
     private final int retriesCount;
     private final boolean retriesStatusChange;
 
+    private final boolean chrome;
+    private final boolean firefox;
+    private final boolean edge;
+    private final boolean ie;
+    private final boolean safari;
+    private final boolean apple;
+    private final boolean android;
+
     private final List<String> parameters;
     private final Set<String> tags;
 
@@ -63,6 +71,13 @@ public class TestResultTreeLeaf extends DefaultTreeLeaf {
         this.retriesCount = testResult.getRetriesCount();
         this.parameters = testResult.getParameterValues();
         this.tags = testResult.getExtraBlock("tags");
+        this.chrome = tags.contains("chrome");
+        this.firefox = tags.contains("firefox");
+        this.edge = tags.contains("edge");
+        this.ie = tags.contains("ie");
+        this.safari = tags.contains("safari");
+        this.apple = tags.contains("apple");
+        this.android = tags.contains("android");
     }
     public String getParentUid() {
         return parentUid;
@@ -110,5 +125,33 @@ public class TestResultTreeLeaf extends DefaultTreeLeaf {
 
     public Set<String> getTags() {
         return tags;
+    }
+
+    public boolean isChrome() {
+        return chrome;
+    }
+
+    public boolean isFirefox() {
+        return firefox;
+    }
+
+    public boolean isEdge() {
+        return edge;
+    }
+
+    public boolean isIe() {
+        return ie;
+    }
+
+    public boolean isSafari() {
+        return safari;
+    }
+
+    public boolean isApple() {
+        return apple;
+    }
+
+    public boolean isAndroid() {
+        return android;
     }
 }

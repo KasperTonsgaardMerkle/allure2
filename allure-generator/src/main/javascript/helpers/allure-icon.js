@@ -42,6 +42,34 @@ const icons = {
     className: "fa fa-question-circle fa-fw text_status_unknown",
     tooltip: "status.unknown",
   },
+  chrome: {
+    className: "fa-brands fa-chrome",
+    tooltip: "browser.chrome",
+  },
+  firefox: {
+    className: "fa-brands fa-firefox-browser",
+    tooltip: "browser.firefox",
+  },
+  edge: {
+    className: "fa-brands fa-edge-legacy",
+    tooltip: "browser.edge",
+  },
+  ie: {
+    className: "fa-brands fa-internet-explorer",
+    tooltip: "browser.internet-explorer",
+  },
+  safari: {
+    className: "fa-brands fa-safari",
+    tooltip: "browser.safari",
+  },
+  apple: {
+    className: "fa-brands fa-apple",
+    tooltip: "platform.apple",
+  },
+  android: {
+    className: "fa-brands fa-android",
+    tooltip: "platform.android",
+  },
 };
 
 export default function(value, opts) {
