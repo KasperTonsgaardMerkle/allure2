@@ -46,6 +46,41 @@
                 {{allure-icon 'retriesStatusChange'}}
             </div>
         {{/if}}
+        {{#if chrome}}
+            <div class="node__order">
+                {{allure-icon 'chrome'}}
+            </div>
+        {{/if}}
+        {{#if firefox}}
+            <div class="node__order">
+                {{allure-icon 'firefox'}}
+            </div>
+        {{/if}}
+        {{#if edge}}
+            <div class="node__order">
+                {{allure-icon 'edge'}}
+            </div>
+        {{/if}}
+        {{#if ie}}
+            <div class="node__order">
+                {{allure-icon 'ie'}}
+            </div>
+        {{/if}}
+        {{#if safari}}
+            <div class="node__order">
+                {{allure-icon 'safari'}}
+            </div>
+        {{/if}}
+        {{#if apple}}
+            <div class="node__order">
+                {{allure-icon 'apple'}}
+            </div>
+        {{/if}}
+        {{#if android}}
+            <div class="node__order">
+                {{allure-icon 'android'}}
+            </div>
+        {{/if}}
         <div class="node__stats">
             {{~duration time.duration~}}
         </div>
